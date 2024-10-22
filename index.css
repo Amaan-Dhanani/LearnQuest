@@ -1,0 +1,94 @@
+body {
+    font-family: "Varela Round", sans-serif; /* Set font to Varela Round */
+    background-color: #f4faff;
+    display: flex;
+    transition: margin-left 0.3s;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif; /* Title uses Poppins */
+    color: #6a1b9a; /* Dark purple color for title */
+}
+
+h2 {
+    font-family: "Varela Round", sans-serif; /* Subheadings use Varela Round */
+    color: #6a1b9a; /* Dark purple color for headings */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #6a1b9a; /* Dark purple color */
+    padding: 15px;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: -250px; /* Hide initially */
+    transition: left 0.3s;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #8e24aa; /* Lighter purple on hover */
+}
+
+/* Main content styles */
+.main {
+    margin-left: 0; /* Adjust based on sidebar visibility */
+    padding: 20px;
+    width: calc(100% - 0);
+    transition: margin-left 0.3s;
+}
+
+/* Phone numbers and navigation container styles */
+.phone-numbers {
+    display: flex;
+    align-items: center;
+    background-color: #c8aeb9;
+    padding: 10px;
+    position: fixed;
+    width: calc(100% - 250px);
+    left: 250px;
+    z-index: 1;
+}
+
+/* Container styles */
+.container {
+    background-color: #c8aeb9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #6a1b9a; /* Match footer with sidebar */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Menu button */
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    color: #6a1b9a; /* Color of the menu icon */
+}
