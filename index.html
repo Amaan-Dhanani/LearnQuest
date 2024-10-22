@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anee's Care LLC</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Menu Button -->
+    <div class="menu-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Anee's Care</h2>
+        <a href="math.html">Math</a>
+        <a href="science.html">English</a>
+        <a href="ss.html">Science</a>
+        <em><a href="makeyourown.html">Create Your Own</a></em>
+    </div>
+
+    <!-- Phone numbers and navigation container -->
+    <div class="phone-numbers">
+        <img height="40px" src="https://imageupload.io/ib/hWXPk7RcHlEEQAt_1690510283.png" alt="Anee's Care">
+        <a href="tel:+18177290428"><i class="fas fa-phone-alt"></i> 817-729-0428</a>
+        <a href="mailto:anee.care92@gmail.com"><i class="fa fa-envelope"></i> anee.care92@gmail.com</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main" id="main-content">
+        <!-- Header -->
+        <div class="header">
+            <h1>Welcome to Anee's Care</h1>
+            <p>Your Trusted Nursing Professional Located in Richmond, Virginia <img src="https://cdn-thumbs.imagevenue.com/e8/f4/24/ME16X1GJ_t.png" style="filter: invert(100%);" height="60" alt="RN"></p>
+        </div>
+
+        <!-- About Section -->
+        <div class="container" id="home">
+            <h2>About Anee's Care</h2>
+            <p>
+                Hello, my name is Anisa Merchant, the owner of Anee's Care, dedicated to providing top-notch exceptional care to the community...
+            </p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="container" id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Service Facilitating for Consumer-Directed Programs</li>
+                <li>Personal Care Assistance</li>
+                <li>Respite Care Assistance</li>
+                <li>Healthcare Consulting</li>
+                <li>Wound Care</li>
+                <li>Medication Management and Teaching</li>
+                <li>Skilled Nursing</li>
+                <b><li>and much more!</li></b>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="container" id="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or need assistance, please feel free to contact me <u><b>(Anisa Merchant)</b></u>.</p>
+            <p><b>Phone:</b> (817) 729-0428 <b>*</b><u>recommended</u><b>*</b></p>
+            <p><b>Email:</b> anee.care92@gmail.com</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            © 2023 Anee's Care | Contact: anee.care92@gmail.com | (817) 729-0428
+        </footer>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            if (sidebar.style.left === '0px') {
+                sidebar.style.left = '-250px'; // Hide sidebar
+                mainContent.style.marginLeft = '0'; // Reset main content margin
+            } else {
+                sidebar.style.left = '0px'; // Show sidebar
+                mainContent.style.marginLeft = '250px'; // Adjust main content margin
+            }
+        }
+    </script>
+</body>
+</html>
