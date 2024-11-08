@@ -3,6 +3,7 @@ body {
     background-color: #f4faff;
     display: flex;
     transition: margin-left 0.3s;
+    text-align: center;
 }
 
 h1 {
@@ -10,7 +11,7 @@ h1 {
     color: #6a1b9a; /* Dark purple color for title */
 }
 
-h2 {
+h2, h3 {
     font-family: "Varela Round", sans-serif; /* Subheadings use Varela Round */
     color: #6a1b9a; /* Dark purple color for headings */
 }
@@ -68,7 +69,6 @@ h2 {
 
 /* Container styles */
 .container {
-    background-color: #c8aeb9;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
@@ -82,8 +82,24 @@ footer {
     padding: 10px;
 }
 
+.science { 
+    background-color: #90EE90;
+}
+
+.ss {
+    background-color: #FBDF71;
+}
+
+.english {
+    background-color: #FFB6C1;
+}
+
+.math {
+    background-color: #ADD8E6;
+}
+
 /* Menu button */
-.menu-btn {
+#menu-btn {
     font-size: 24px;
     cursor: pointer;
     position: fixed;
@@ -91,4 +107,77 @@ footer {
     top: 10px;
     z-index: 2;
     color: #6a1b9a; /* Color of the menu icon */
+}
+
+.logo {
+    width: 250px;
+    
+}
+
+.quest::first-letter {
+    text-decoration: none;
+}
+
+.quest {
+    font-style: oblique;
+    margin-left: -3px;
+    text-decoration: underline;
+}
+
+.grade-list-container {
+    margin: 10px 15px;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.grade-item {
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    color: white;
+}
+
+.kindergarten {
+    color: white;
+    background-color: #FF4500;
+    border: 1px solid #FF4500;
+}
+
+.first-grade {
+    color: white;
+    background-color: #32CD32;
+    border: 1px solid #32CD32;
+}
+
+.second-grade {
+    color: white;
+    background-color: #FFD700;
+    border: 1px solid #FFD700;
+}
+
+.third-grade {
+    color: white;
+    background-color: #89CFF0;
+    border: 1px solid #89CFF0;
+}
+
+.fourth-grade {
+    color: white;
+    background-color: #FF69B4;
+    border: 1px solid #FF69B4;
+}
+
+.fifth-grade {
+    color: white;
+    background-color: #8A2BE2;
+    border: 1px solid #8A2BE2;
 }
